@@ -42,7 +42,7 @@ body{
     0 0 20px rgba(0,0,0,0.4);
 }
 
-/* TOP */
+
 
 .top-bar{
 
@@ -61,8 +61,6 @@ h1{
   color:#38bdf8;
 }
 
-/* GRID */
-
 .translator-box{
 
   display:grid;
@@ -73,7 +71,7 @@ h1{
   gap:25px;
 }
 
-/* CARD */
+
 
 .card,
 .history-card{
@@ -101,7 +99,7 @@ h1{
   margin-bottom:20px;
 }
 
-/* INPUTS */
+
 
 label{
 
@@ -140,7 +138,7 @@ textarea{
   resize:none;
 }
 
-/* BUTTONS */
+
 
 button{
 
@@ -172,7 +170,7 @@ button:hover{
   transform:scale(1.03);
 }
 
-/* BUTTON GROUP */
+
 
 .btn-group{
 
@@ -183,7 +181,7 @@ button:hover{
   margin-bottom:10px;
 }
 
-/* COUNTER */
+
 
 #counter{
 
@@ -192,7 +190,7 @@ button:hover{
   color:#cbd5e1;
 }
 
-/* HISTORY */
+
 
 .history-card{
 
@@ -224,7 +222,7 @@ button:hover{
   animation:fadeIn 0.5s ease;
 }
 
-/* VOICE ANIMATION */
+
 
 .voice-animation{
 
@@ -278,14 +276,13 @@ button:hover{
   height:10px;
 }
 
-/* SLIDER */
 
 .slider-box{
 
   margin-top:15px;
 }
 
-/* TOAST */
+
 
 .toast{
 
@@ -309,7 +306,7 @@ button:hover{
     fadeIn 0.4s ease;
 }
 
-/* LIGHT MODE */
+
 
 .light-mode{
 
@@ -338,7 +335,7 @@ button:hover{
   color:black;
 }
 
-/* ANIMATION */
+
 
 @keyframes wave{
 
@@ -368,7 +365,7 @@ button:hover{
   }
 }
 
-/* RESPONSIVE */
+
 
 @media(max-width:768px){
 
