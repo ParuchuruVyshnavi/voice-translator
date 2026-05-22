@@ -14,13 +14,13 @@ const targetLang =
   document.getElementById("targetLang");
 
 
-// SETTINGS
+
 let speechRate = 1;
 let speechPitch = 1;
 let speechVolume = 1;
 
 
-// START LISTENING
+
 function startListening(){
 
   const SpeechRecognition =
@@ -93,7 +93,7 @@ function startListening(){
 }
 
 
-// TRANSLATE
+
 async function translateNow(text){
 
   let sourceCode =
@@ -151,7 +151,7 @@ async function translateNow(text){
 }
 
 
-// TYPING EFFECT
+
 function typingEffect(text){
 
   translatedText.value = "";
@@ -175,7 +175,7 @@ function typingEffect(text){
 }
 
 
-// SPEAK
+
 function speakTranslation(){
 
   speechSynthesis.cancel();
@@ -225,7 +225,6 @@ function speakTranslation(){
 }
 
 
-// STOP SPEAK
 function stopSpeaking(){
 
   speechSynthesis.cancel();
@@ -236,7 +235,7 @@ function stopSpeaking(){
 }
 
 
-// COPY
+
 function copyTranslation(){
 
   navigator.clipboard.writeText(
@@ -249,7 +248,7 @@ function copyTranslation(){
 }
 
 
-// CLEAR
+
 function clearAll(){
 
   sourceText.value = "";
@@ -264,7 +263,7 @@ function clearAll(){
 }
 
 
-// SWAP
+
 function swapLanguages(){
 
   let temp =
@@ -290,7 +289,7 @@ function swapLanguages(){
 }
 
 
-// HISTORY
+
 function addHistory(
   original,
   translated
@@ -324,7 +323,7 @@ function addHistory(
 }
 
 
-// LOAD HISTORY
+
 window.onload = ()=>{
 
   historyDiv.innerHTML =
@@ -336,7 +335,7 @@ window.onload = ()=>{
 };
 
 
-// CLEAR HISTORY
+
 function clearHistory(){
 
   historyDiv.innerHTML = "";
@@ -351,7 +350,7 @@ function clearHistory(){
 }
 
 
-// FAVORITES
+
 function saveFavorite(){
 
   let favorites =
@@ -376,7 +375,7 @@ function saveFavorite(){
 }
 
 
-// DOWNLOAD
+
 function downloadText(){
 
   const blob =
@@ -402,7 +401,6 @@ function downloadText(){
 }
 
 
-// COUNTER
 function updateCounter(){
 
   const words =
@@ -421,7 +419,7 @@ function updateCounter(){
 }
 
 
-// THEME
+
 document
   .getElementById("themeBtn")
   .onclick = ()=>{
@@ -432,7 +430,7 @@ document
 };
 
 
-// TOAST
+
 function showToast(message){
 
   const toast =
@@ -456,7 +454,7 @@ function showToast(message){
 }
 
 
-// ENTER KEY
+
 sourceText.addEventListener(
   "keypress",
   function(event){
@@ -473,7 +471,7 @@ sourceText.addEventListener(
 );
 
 
-// VOICE CONTROLS
+
 function setRate(value){
 
   speechRate = value;
